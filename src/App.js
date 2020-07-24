@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
 
+/**
+ * Create 2 new components - Header and MemeGenerator
+ * Header will only display things
+ * MemeGenerator will be calling to an API and holding on to data
+ * Each should be in their own file of the same name
+ */
+import Header from './Header'
+import MemeGenerator from './MemeGenerator'
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+       
+               <MemeGenerator/>
+        </>
+    )
 }
 
-export default App;
+export default App
